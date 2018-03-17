@@ -1,0 +1,42 @@
+h3 {
+    color: #E8EDF2;
+    text-shadow: 1px 1px 8px #13293D;
+}
+
+h5 {
+    color: #E8EDF2;
+    text-shadow: 1px 1px 8px #13293D;
+}
+
+i {
+    color: #E8EDF2;
+    text-shadow: 1px 1px 8px #13293D;
+}
+
+p {
+    color: #E8EDF2;
+    text-shadow: 1px 1px 8px #13293D;
+}
+
+a {
+    color: #E8EDF2;
+}
+
+a:hover {
+    color: #E8EDF2;
+}
+
+footer {
+    color: #E8EDF2;
+    text-shadow: 1px 1px 8px #13293D;
+}
+
+.no-antialias { 
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
