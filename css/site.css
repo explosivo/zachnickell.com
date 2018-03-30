@@ -1,3 +1,7 @@
+body {
+    background-color: #004C93;
+}
+
 h3 {
     color: #E8EDF2;
     text-shadow: 1px 1px 8px #13293D;
@@ -18,6 +22,10 @@ p {
     text-shadow: 1px 1px 8px #13293D;
 }
 
+.condense {
+    margin: 0;
+}
+
 a {
     color: #E8EDF2;
 }
@@ -36,7 +44,22 @@ footer {
     image-rendering: -moz-crisp-edges;          /* Firefox                        */
     image-rendering: -o-crisp-edges;            /* Opera                          */
     image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-    image-rendering: pixelated; /* Chrome */
+    image-rendering: pixelated;                 /* Chrome */
     image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
+.blur {
+    position: fixed;
+    top:0;
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 20px;
+    background: rgb(0,76,147);
+    z-index:-1;
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter: blur(20px);
 }

@@ -1,53 +1,57 @@
 var navbar = document.createElement("nav");
-navbar.classList.add("navbar", "navbar-expand-lg", "navbar-dark", "bg-faded");
+navbar.className = "navbar sticky-top navbar-expand-lg navbar-dark bg-faded";
 
 var brand = document.createElement("a");
-brand.classList.add("navbar-brand");
-brand.href = "index.html";
+brand.className = "navbar-brand";
+brand.href = "/";
 brand.innerHTML = "zachnickell";
 
 var navbarButton = document.createElement("button");
-navbarButton.classList.add("navbar-toggler");
-navbarButton.type = "button";
+navbarButton.className = "navbar-toggler";
+navbarButton.setAttribute("type", "button");
 navbarButton.setAttribute("data-toggle", "collapse");
 navbarButton.setAttribute("data-target", "#navbarSupportedContent");
 navbarButton.setAttribute("aria-controls", "navbarSupportedContent");
 navbarButton.setAttribute("aria-expanded", "false");
 navbarButton.setAttribute("aria-label", "Toggle navigation");
 var navbarButtonIcon = document.createElement("span");
-navbarButtonIcon.classList.add("navbar-toggler-icon");
+navbarButtonIcon.className = "navbar-toggler-icon";
 navbarButton.appendChild(navbarButtonIcon);
 
 var collapseNav = document.createElement("div");
-collapseNav.classList.add("collapse", "navbar-collapse");
+collapseNav.className = "collapse navbar-collapse";
 collapseNav.setAttribute("id", "navbarSupportedContent");
 
 var navlist = document.createElement("ul");
-navlist.classList.add("navbar-nav", "mr-auto");
+navlist.className = "navbar-nav mr-auto";
 
-var about = createNavItem("about", "index.html");
+var about = createNavItem("about", "/");
 var projects = createNavItem("projects", "projects.html");
-var downloads = createNavItem("downloads", "#");
+var downloads = createNavItem("docs", "#");
+var noise = createNavItem("noise", "#");
 
-var navItems = [about, projects, downloads];
+var navItems = [about, projects, downloads, noise];
 setActiveNavItem(navItems);
 addNavItemsToNavList(navItems, navlist);
-
 collapseNav.appendChild(navlist);
+
+var blur = document.createElement("div");
+blur.className = "blur";
 
 navbar.appendChild(brand);
 navbar.appendChild(navbarButton);
 navbar.appendChild(collapseNav);
+navbar.appendChild(blur);
 
 document.body.appendChild(navbar);
 
 function createNavItem(text, href)
 {
-    let navitem = document.createElement("li");
-    navitem.classList.add("nav-item");
+    var navitem = document.createElement("li");
+    navitem.className = "nav-item";
     
-    let navlink = document.createElement("a");
-    navlink.classList.add("nav-link");
+    var navlink = document.createElement("a");
+    navlink.className = "nav-link";
     navlink.href = href;
     navlink.innerHTML = text;
 
@@ -58,17 +62,17 @@ function createNavItem(text, href)
 
 function setActiveNavItem(navItems)
 {
-    let urlParts = window.location.href.split("/");
-    let currentHref = urlParts[urlParts.length - 1];
+    var urlParts = window.location.href.split("/");
+    var currentHref = urlParts[urlParts.length - 1];
     
     for (var i = 0, len = navItems.length; i < len; i ++)
     {
-        let urlParts = navItems[i].firstElementChild.href.split("/");
-        let href = urlParts[urlParts.length - 1];
+        var urlParts = navItems[i].firstElementChild.href.split("/");
+        var href = urlParts[urlParts.length - 1];
         
         if (currentHref == href)
         {
-            navItems[i].classList.add("active");
+            navItems[i].className = "active";
             return;
         }
     }

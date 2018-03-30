@@ -1,43 +1,72 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <!-- Bootstrap CSS -->
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+        <link rel="manifest" href="/icon/site.webmanifest">
+        <link rel="mask-icon" href="/icon/safari-pinned-tab.svg" color="#004c93">
+        <link rel="shortcut icon" href="/icon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#004c93">
+        <meta name="msapplication-config" content="/icon/browserconfig.xml">
+        <meta name="theme-color" content="#004c93">
+        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-        
-        <link rel="stylesheet" href="site.css">
-        
+        <link rel="stylesheet" href="/css/site.css">
         <title>zachnickell.com</title>
     </head>
     <body>
         <canvas style="position: fixed; z-index: -1;" width="1000" height="600" id="clouds"></canvas>
         
-        <script type="text/javascript" src="nav.js"></script>
+        <script type="text/javascript" src="/js/nav.js"></script>
 
         <div class="container">
             <h3>projects.</h3>
             <p></p>
             <div class="media">
-                <img style="border-radius: 12px;" class="d-flex mr-3" src="ihatemyjob.png" width=64 alt="">
+                <img style="border-radius: 12px;" class="d-flex mr-3" src="/img/ihatemyjob.png" width=64 alt="">
                 <div class="media-body">
                     <a href="http://www.deviousgamers.com/our-games" target="_blank"><h5 class="mt-0">I Hate My Job</h5></a>
                     <i>2014 - 2015</i>
-                    <p class="lead">I worked on a mobile game with a startup company, <a href="http://deviousgamers.com" target="_blank">Devious Gamers</a>. We were
+                    <p class="lead">I worked on a mobile game with a startup company, <a href="http://www.deviousgamers.com/about-us" target="_blank">Devious Gamers</a>. We were
                     quite possibly some of the first people to develop a commercial game using Unreal Engine 4. The game spent a few years in development hell before
                     finally being released in 2016.</p>
                 </div>
             </div>
             <div class="media">
-                <img class="d-flex mr-3" src="dotateamup.png" alt="dotateamup logo" width=64>
+                <img class="d-flex mr-3" src="/img/dg.jpg" width=64 alt="">
+                <div class="media-body">
+                    <a target="_blank"><h5 class="mt-0">Devious Hub</h5></a>
+                    <i>2014 - 2015</i>
+                    <p class="lead">I wrote a general purpose multiplayer server for <a href="http://www.deviousgamers.com/about-us" target="_blank">Devious Gamers</a>.
+                    The server was able to match players together and maintain state information for multiplayer game instances. I wrote an api for this server so that
+                    it could be used in games written in Unreal Engine 4.</p>
+                </div>
+            </div>
+            <div class="media">
+                <img class="d-flex mr-3" src="/img/dotateamup.png" alt="dotateamup logo" width=64>
                 <div class="media-body">
                     <a href="http://dotateamup.com" target="_blank"><h5 class="mt-0">Dota Team Up</h5></a>
                     <i>2017+</i>
-                    <p class="lead">My brother-in-law, Josh Guthrie, started this project. Several other developers and I are contributors.
+                    <p class="lead">This project is led by Josh Guthrie. Several other developers and I are contributors.
                     This web app can match you with other Dota 2 players who are compatible with your schedule, skills, and play style. Players
                     can match one-on-one or create optimal teams.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <h3>open source.</h3>
+            <p></p>
+            <div class="media">
+                <img class="d-flex mr-3" src="/img/mozilla2.png" width=64 alt="">
+                <div class="media-body">
+                    <a href="https://mozillians.org/en-US/u/znickell/" target="_blank"><h5 class="mt-0">Mozilla</h5></a>
+                    <i>2013+</i>
+                    <p class="lead">I've done some frontend work for <a href="https://mozilla.org/thunderbird" target="_blank">Thunderbird</a> and <a href="https://mozilla.org/firefox" target="_blank">Firefox</a>.</p>
                 </div>
             </div>
         </div>
@@ -46,12 +75,26 @@
             <h3>school.</h3>
             <p></p>
             <div class="media">
-                <img style="border-radius: 24px;" class="d-flex mr-3" src="clip.png" width=64 alt="">
+                <img style="border-radius: 12px;" class="d-flex mr-3" src="/img/clip.png" width=64 alt="">
                 <div class="media-body">
-                    <a href="http://github.com/explosivo/platform-r2" target="_blank"><h5 class="mt-0">CLIP</h5></a>
-                    <i>2012 - 2013</i>
-                    <p class="lead">I made this game when I was a senior in high school. This wasn't my first game, but it was the first that was even remotely coherent.
-                    I wrote the engine from scratch. The game was never finished, but I learned a lot about game development while working on this.</p>
+                    <a target="_blank"><h5 class="mt-0">CLIP</h5></a>
+                    <i>2015</i>
+                    <p class="lead">Career and Life Integrated Planning (C.L.I.P.) is an Android application that helps the user keep track of and plan their career, finance,
+                    education and health information. The application is designed to be user-friendly and secure to keep private information confidential. The purpose of
+                    this application is to help its users keep their life on track, and stay organized and on top of their busy, hectic lives.<br>
+                    ...or at least that's what we wrote in the user manual. I worked on this project with three other students. I wrote the app and they wrote most of the
+                    documentation.</p>
+                </div>
+            </div>
+            <div class="media">
+                <img style="border-radius: 12px;" class="d-flex mr-3" src="/img/fighter.png" width=64 alt="">
+                <div class="media-body">
+                    <a target="_blank"><h5 class="mt-0">Neural Network Fighting AI</h5></a>
+                    <i>2016</i>
+                    <p class="lead">I made a fighting game in Unreal Engine 4 and trained the AI using a neural network. Training data was obtained by getting two people to play
+                    the game and collecting all the actions from the winning player. I wrote an external neural network training program that took the training data, trained a
+                    neural network how to win the fighting game, and save a data file containing the resultant neural network. Finally, the neural network data was used in the
+                    fighting game to control the AI player.</p>
                 </div>
             </div>
         </div>
@@ -60,41 +103,38 @@
             <h3>hacks.</h3>
             <p></p>
             <div class="media">
-                <img class="d-flex mr-3 no-antialias" src="platformr2.png" width=64 alt="">
+                <img class="d-flex mr-3 no-antialias" src="/img/platformr2.png" width=64 alt="">
                 <div class="media-body">
                     <a href="http://github.com/explosivo/platform-r2" target="_blank"><h5 class="mt-0">Platform-r2</h5></a>
                     <i>2012 - 2013</i>
                     <p class="lead">I made this game when I was a senior in high school. This wasn't my first game, but it was the first that was even remotely coherent.
-                    I wrote the engine from scratch. The game was never finished, but I learned a lot about game development while working on this.</p>
+                    I wrote the engine from scratch. It was meant to be a topdown shooter Sci-Fi RPG. The game was never finished, but I learned a lot about game development
+                    while working on this.</p>
                 </div>
             </div>
             <div class="media">
-                <img style="border-radius: 12px;" class="d-flex mr-3 no-antialias" src="vcpu.png" width=64 alt="">
+                <img style="border-radius: 12px;" class="d-flex mr-3 no-antialias" src="/img/vcpu.png" width=64 alt="">
                 <div class="media-body">
                     <a href="https://github.com/explosivo/vcpu" target="_blank"><h5 class="mt-0">vcpu</h5></a>
                     <i>2015</i>
-                    <p class="lead">The goal was to make a 16-bit virtual cpu complete with an assembler. The project was quickly abandoned because it is totally useless.
-                    Sometimes when I'm really bored I throw code at it. Why did I make this?</p>
+                    <p class="lead">The goal was to make a 16-bit virtual cpu complete with an assembler. The project was quickly "abandoned" after I came to my senses. It serves no
+                    practical purpose. I'll admit that I do still work on it sometimes when I'm really bored. Why did I make this?</p>
                 </div>
             </div>
             <div class="media">
-                <img style="border-radius: 12px;" class="d-flex mr-3 no-antialias" src="snowfall.png" width=64 alt="">
+                <img style="border-radius: 12px;" class="d-flex mr-3 no-antialias" src="/img/snowfall.png" width=64 alt="">
                 <div class="media-body">
-                    <a href="https://github.com/explosivo/vcpu" target="_blank"><h5 class="mt-0">snowfall</h5></a>
+                    <a href="https://github.com/explosivo/snowfall" target="_blank"><h5 class="mt-0">snowfall</h5></a>
                     <i>2015</i>
-                    <p class="lead">This was a pretty, winter themed game made with Unreal Engine 4. It was supposed to be a casual rpg, but it never made it too far off the ground.
-                    I still might finish this one someday.</p>
+                    <p class="lead">This was a winter themed game made with Unreal Engine 4. It was supposed to be a casual rpg, but it never made it too far off the ground.
+                    I still might finish this someday.</p>
                 </div>
             </div>
         </div>
         
-        
-
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="cloudsbg.js"></script>
+        <script type="text/javascript" src="/js/cloudsbg.js"></script>
     </body>
 </html>
