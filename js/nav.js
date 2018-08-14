@@ -28,9 +28,8 @@ navlist.className = "navbar-nav mr-auto";
 var about = createNavItem("about", "/");
 var projects = createNavItem("projects", "projects.html");
 var downloads = createNavItem("docs", "#");
-var noise = createNavItem("noise", "#");
 
-var navItems = [about, projects, downloads, noise];
+var navItems = [about, projects, downloads];
 setActiveNavItem(navItems);
 addNavItemsToNavList(navItems, navlist);
 collapseNav.appendChild(navlist);
@@ -64,6 +63,11 @@ function setActiveNavItem(navItems)
 {
     var urlParts = window.location.href.split("/");
     var currentHref = urlParts[urlParts.length - 1];
+    
+    if (urlParts[urlParts.length - 2] == "freesoftware") {
+        navItems[2].className = "active";
+        return;
+    }
     
     for (var i = 0, len = navItems.length; i < len; i ++)
     {
