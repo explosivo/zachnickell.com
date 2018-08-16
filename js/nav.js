@@ -27,7 +27,7 @@ navlist.className = "navbar-nav mr-auto";
 
 var about = createNavItem("about", "/");
 var projects = createNavItem("projects", "projects.html");
-var downloads = createNavItem("docs", "#");
+var downloads = createNavItem("docs", "docs.html");
 
 var navItems = [about, projects, downloads];
 setActiveNavItem(navItems);
