@@ -64,11 +64,6 @@ function setActiveNavItem(navItems)
     var urlParts = window.location.href.split("/");
     var currentHref = urlParts[urlParts.length - 1];
     
-    if (urlParts[urlParts.length - 2] == "freesoftware") {
-        navItems[2].className = "active";
-        return;
-    }
-    
     for (var i = 0, len = navItems.length; i < len; i ++)
     {
         var urlParts = navItems[i].firstElementChild.href.split("/");
